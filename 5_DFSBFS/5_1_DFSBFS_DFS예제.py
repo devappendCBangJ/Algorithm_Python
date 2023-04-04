@@ -1,3 +1,5 @@
+# 특징 : 모든 노드 1번씩 방문
+
 # 각 노드 연결 정보 선언 (2차원 리스트)
 graph = [
     [],
@@ -20,7 +22,7 @@ def dfs(graph, v, visited):
     visited[v] = True
     print(v, end = ' ')
 
-    # 현재 노드와 연결된 노드 DFS 재귀적 방문
+    # 현재 노드와 연결된 노드 DFS 재귀적 방문 (단, 원하지 않는 노드는 방문하지 않음)
     for i in graph[v]:
         if not visited[i]:
             dfs(graph, i, visited)

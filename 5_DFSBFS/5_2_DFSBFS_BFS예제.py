@@ -1,3 +1,5 @@
+# 특징 : 모든 노드 1번씩 방문
+
 # 라이브러리 불러오기
 from collections import deque
 
@@ -31,7 +33,7 @@ def bfs(graph, start, visited):
         v = queue.popleft()
         print(v, end = ' ')
 
-        # 가장 오래된 노드와 연결된 인접 노드 방문
+        # 가장 오래된 노드와 연결된 인접 노드 방문 (단, 원하지 않는 노드는 방문하지 않음)
         for i in graph[v]:
             if not visited[i]:
                 queue.append(i)
