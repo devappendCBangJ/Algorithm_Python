@@ -1,30 +1,30 @@
-# # input 불러오기
-# T = int(input())
-# for test_case in range(1, T + 1):
-#     # input 불러오기
-#     d, m, mmm, y = list(map(int, input().split()))
-#     plan = [0]
-#     plan.extend(list(map(int, input().split())))
-#
-#     # dp_table 선언
-#     dp_table = [0] * 13
-#
-#     for i in range(1, 12 + 1):
-#         # 월 이용권이 싼 경우
-#         if d * plan[i] >= m:
-#             dp_table[i] = dp_table[i-1] + m
-#         # 일 이용권이 싼 경우
-#         else:
-#             dp_table[i] = dp_table[i-1] + d * plan[i]
-#         # 3월 이상 부터 : 3달 연속 이용권이 싼 경우 추가
-#         if i > 2:
-#             if dp_table[i] >= dp_table[i-3] + mmm:
-#                 dp_table[i] = dp_table[i-3] + mmm
-#
-#     if dp_table[12] >= y:
-#         print(f'#{test_case} {y}')
-#     else:
-#         print(f'#{test_case} {dp_table[12]}')
+# input 불러오기
+T = int(input())
+for test_case in range(1, T + 1):
+    # input 불러오기
+    d, m, mmm, y = list(map(int, input().split()))
+    plan = [0]
+    plan.extend(list(map(int, input().split())))
+
+    # dp_table 선언
+    dp_table = [0] * 13
+
+    for i in range(1, 12 + 1):
+        # 월 이용권이 싼 경우
+        if d * plan[i] >= m:
+            dp_table[i] = dp_table[i-1] + m
+        # 일 이용권이 싼 경우
+        else:
+            dp_table[i] = dp_table[i-1] + d * plan[i]
+        # 3월 이상 부터 : 3달 연속 이용권이 싼 경우 추가
+        if i > 2:
+            if dp_table[i] >= dp_table[i-3] + mmm:
+                dp_table[i] = dp_table[i-3] + mmm
+
+    if dp_table[12] >= y:
+        print(f'#{test_case} {y}')
+    else:
+        print(f'#{test_case} {dp_table[12]}')
 
 # ---------------------------------------------------
 # 다른 사람 : DP 풀이 -> if가 아니라 min 사용해도 되구나!
