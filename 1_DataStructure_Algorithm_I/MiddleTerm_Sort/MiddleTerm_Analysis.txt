@@ -1,0 +1,74 @@
+Average Filter 500회 평균
+bubble sort : 0.0682373 sec
+insertion sort : 0.0514192 sec
+selection sort : 0.0278031 sec
+merge sort : 0.0027920 sec
+merge sort_self : 0.0029486 sec
+quick sort : 0.0013938 sec
+quick sort_self : 0.0015997 sec
+bucket sort(+bubble sort) : 0.0046333 sec
+bucket sort(+insertion sort) : 0.0033667 sec
+bucket sort(+selection sort) : 0.0023312 sec
+bucket sort(+merge sort) : 0.0020939 sec
+bucket sort(+quick sort) : 0.0011580 sec
+bucket sort(+radix sort) : 0.0044715 sec
+bucket sort(+tim sort) : 0.0018873 sec
+bucket sort(+dual pivot quick sort) : 0.0011179 sec
+radix sort : 0.0034196 sec
+내장함수 .sort() : 0.0000000 sec
+dual pivot sort : 0.0013659 sec
+tim sort(run : 5) : 0.0026260 sec
+tim sort(run : 50) : 0.0035805 sec
+tim sort(run : 500) : 0.0232670 sec
+
+특별한 정렬 알고리즘
+http://www.secmem.org/blog/2019/04/10/special-sorts/
+http://www.secmem.org/blog/2019/05/06/special-sorts-2/
+
+tim sort 코드 구현
+https://www.youtube.com/watch?v=9kFHVe5MT6o # 이게 짱임
+https://www.youtube.com/watch?v=KVnL6BjREW4
+https://www.youtube.com/watch?v=jVXsjswWo44
+
+tim sort 상세한 설명
+https://d2.naver.com/helloworld/0315536
+https://songhayoung.github.io/2020/06/28/Intermediate%20Algorithm/Tim_Sort/#Timsort
+
+tim sort 시간 복잡도 표
+https://d2.naver.com/helloworld/0315536
+
+알고리즘 분석 방법
+http://ejklike.github.io/2017/03/04/sorting-algorithms-with-python.html
+
+알고리즘 간 비교
+https://velog.io/@jaeyunn_15/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%81-%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B9%84%EA%B5%90
+https://yabmoons.tistory.com/250
+
+insert sort
+# https://www.daleseo.com/sort-insertion/
+
+selection sort
+# https://www.daleseo.com/sort-selection/
+
+merge sort
+# https://www.daleseo.com/sort-merge/
+
+quick sort
+# https://www.daleseo.com/sort-quick/
+
+bucket sort num
+# https://stackabuse.com/bucket-sort-in-python/
+
+bucket sort string
+# https://stackabuse.com/bucket-sort-in-python/
+
+radix sort num
+# https://devjin-blog.com/sort-algorithm-9/
+
+radix sort string
+# https://stackoverflow.com/questions/60968950/radix-sort-for-strings-in-python
+
+tim sort
+# https://stackabuse.com/bucket-sort-in-python/
+
+dual pivot quick sort
