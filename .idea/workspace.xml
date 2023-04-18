@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f67dea49-bcb9-41ee-9ae6-746abef7d95d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/3_Greedy/3_2_ 실전문제_큰 수의 법칙.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_Greedy/3_3_실전문제_숫자 카드 게임.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_Greedy/3_4_실전문제_1이 될 때까지.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_StackQueue/프로그래머스_고득점kit_기능 개발_실패.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Programmers_고득점kit_게임 맵 최단거리.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Programmers_고득점kit_네트워크.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Programmers_고득점kit_타겟 넘버.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_CodingTest/9_StackQueue/프로그래머스_고득점kit_기능 개발_실패.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_CodingTest/9_StackQueue/Programmers_고득점kit_기능 개발_실패.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,57 +34,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/hi/Jupyter/Algorithm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/hi/PycharmProjects/Test",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python.프로그래머스_고득점kit_기능 개발_실패">
-    <configuration name="3_2_ 실전문제_큰 수의 법칙" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3_Greedy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3_Greedy/3_2_ 실전문제_큰 수의 법칙.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="3_3_실전문제_숫자 카드 게임" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3_Greedy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3_Greedy/3_3_실전문제_숫자 카드 게임.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="Python.Programmers_고득점kit_네트워크">
     <configuration name="3_4_실전문제_1이 될 때까지" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SWEA_1952_수영장" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Programmers_고득점kit_타겟 넘버" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,11 +93,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8_DP" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_CodingTest/5_DFSBFS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8_DP/SWEA_1952_수영장.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Programmers_고득점kit_타겟 넘버.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Programmers_고득점kit_게임 맵 최단거리" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_CodingTest/5_DFSBFS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Programmers_고득점kit_게임 맵 최단거리.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Programmers_고득점kit_네트워크" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_CodingTest/5_DFSBFS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Programmers_고득점kit_네트워크.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Programmers_고득점kit_네트워크" />
+        <item itemvalue="Python.Programmers_고득점kit_게임 맵 최단거리" />
+        <item itemvalue="Python.Programmers_고득점kit_타겟 넘버" />
         <item itemvalue="Python.프로그래머스_고득점kit_기능 개발_실패" />
         <item itemvalue="Python.3_4_실전문제_1이 될 때까지" />
-        <item itemvalue="Python.3_3_실전문제_숫자 카드 게임" />
-        <item itemvalue="Python.3_2_ 실전문제_큰 수의 법칙" />
-        <item itemvalue="Python.SWEA_1952_수영장" />
       </list>
     </recent_temporary>
   </component>
@@ -247,6 +248,12 @@
           <url>file://$PROJECT_DIR$/9_StackQueue/프로그래머스_고득점kit_기능 개발_실패.py</url>
           <line>7</line>
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="r_idx == 2" language="Python" />
+          <url>file://$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Programmers_고득점kit_네트워크.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
