@@ -23,7 +23,7 @@ print(counts)
 print(max(counts))
 
 # ---------------------------------------------------
-# 다른 사람 풀이 -> row를 방문했었는지 확인하고, 방문하지 않았던 row를 방문할때만 result++ 해주면 되네
+# 다른 사람 풀이 -> row를 방문했었는지 확인하고, 방문하지 않았던 row를 방문할때만 result++ 해주면 되네 !!
 # ---------------------------------------------------
 """
 # 입력 받기
@@ -59,7 +59,7 @@ print(solution(n ,computers))
 """
 
 # ---------------------------------------------------
-# 다른 사람 풀이 -> BFS로도 가능
+# 다른 사람 풀이 -> BFS로도 가능 !!!
 # ---------------------------------------------------
 """
 # 입력 받기
@@ -79,16 +79,17 @@ def solution(n, computers):
                 if computers[v][i] == 1 and visit[i] == 0:
                     visit[i] = 1
                     que.append(i)
-        return visit
+        return visit # !!!
+        
     visit = [0 for i in range(n)]
     answer = 0
 
     # row 기준으로, 방문하지 않은 Computer 하나씩 방문
     for i in range(n):
-        try: # visit 내에 값이 0인 원소가 없을 경우 except로 넘어감 -> for문을 n번 다 못돌고 끝나는 경우가 대부분!!!
+        try: # visit 내에 값이 0인 원소가 없을 경우 except로 넘어감 -> for문을 n번 다 못돌고 끝나는 경우가 대부분 !!!
             visit = BFS(visit.index(0), visit)
             answer += 1
-        except:
+        except: # if 0 not in visited: break와 같음 !!!
             break
     return answer
     
@@ -97,7 +98,7 @@ print(solution(n ,computers))
 """
 
 # ---------------------------------------------------
-# 다른 사람 풀이 -> DFS를 stack으로 구현
+# 다른 사람 풀이 -> DFS를 stack으로 구현 !!!
 # ---------------------------------------------------
 """
 # 입력 받기
@@ -117,7 +118,7 @@ def solution(n, computers):
             j = stack.pop()
             visited[j] = 1
             for i in range(0, len(computers)):
-                if computers[j][i] ==1 and visited[i] == 0:
+                if computers[j][i] == 1 and visited[i] == 0:
                     stack.append(i)
 
     # row 기준으로, 방문하지 않은 Computer 하나씩 방문

@@ -69,7 +69,7 @@ def solution(begin, target, words):
 
 def change(fr, to):
     for i in range(len(fr)):
-        if fr[:i]+fr[i+1:] == to[:i]+to[i+1:]: # 단어에서 1개의 문자를 뺐을 때, 두 단어가 같은가!!!
+        if fr[:i]+fr[i+1:] == to[:i]+to[i+1:]: # 단어에서 1개의 문자를 뺐을 때, 두 단어가 같은가!!
             return True
     return False
 
@@ -79,7 +79,7 @@ def dfs(begin, target, d, words):
         answer = d
         return
     else:
-        if len(words) == 0: # words에 원소가 하나도 없으면 return
+        if len(words) == 0: # words에 원소가 하나도 없으면 return !!
             return
         for w in range(len(words)):
             if change(begin, words[w]):
@@ -104,7 +104,7 @@ def solution(begin, target, words):
                 if sum([x!=y for x, y in zip(word_1, word_2)]) == 1:
                     temp_Q.append(words.pop(i))
 
-        if not temp_Q:
+        if not temp_Q: # !!
             return 0
         Q = temp_Q # !!!
         answer += 1
