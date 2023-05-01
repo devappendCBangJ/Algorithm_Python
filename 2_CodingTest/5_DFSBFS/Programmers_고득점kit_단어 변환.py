@@ -19,26 +19,23 @@ if target in words:
                     count += 1
                 if count > 1:
                     break
-            if count == 1: # count를 기존 생각과는 반대로 사용하고 있으므로 len(begin)-1이 아닌, 1이 되어야한다.
+            if count == 1:
                 if word == target:
                     print(level+1)
                 else:
                     queue.append([level+1, word])
-                    words.remove(word)
+                    words.remove(word) # remove의 시간복잡도 큼. 차라리 방문 경로를 저장해두는 것이 더 나음 !!
 else:
     print(0)
 
 # ---------------------------------------------------
-# 다른 사람 풀이 -> 전체적으로 비효율적 / 지난 경로 기억에 dict 사용!!! zip으로 string 2개를 묶어서 한 번에 풀어냄!!! 제너레이터 사용!!!
+# 다른 사람 풀이 -> 전체적으로 비효율적 / 지난 경로 기억에 dict 사용 !!! zip으로 string 2개를 묶어서 한 번에 풀어냄 !!! 제너레이터 사용 !!!
 # ---------------------------------------------------
 """
 from collections import deque
 
 def get_adjacent(current, words):
     for word in words:
-        if len(current) != len(word): # 문제에서 길이 다른 단어는 없다고 함. 이 코드는 필요 없음
-            continue
-
         count = 0
         for c, w in zip(current, word): # 중간에 count가 1 초과면 break 시키는 것이 더 효율적일듯 / zip으로 할 수도 있구나!!!
             if c != w:
@@ -59,11 +56,10 @@ def solution(begin, target, words):
                 dist[next_word] = dist[current] + 1
                 queue.append(next_word)
 
-    return dist.get(target, 0)
+    return dist.get(target, 0) # !!!
 """
-
 # ---------------------------------------------------
-# 다른 사람 풀이 -> dfs풀이!!! list에서 원소 하나 제거하는 방법!!!
+# 다른 사람 풀이 -> dfs풀이 !!! list에서 원소 하나 제거하는 방법 !!!
 # ---------------------------------------------------
 """
 answer = 0
@@ -90,9 +86,8 @@ def dfs(begin, target, d, words):
                 word = words[:w]+words[w+1:] # words에서 이미 방문한 word는 words list에서 제거!!!
                 dfs(words[w], target, d+1, word)
 """
-
 # ---------------------------------------------------
-# 다른 사람 풀이 -> bfs 신기한 방법!!!
+# 다른 사람 풀이 -> bfs 신기한 방법 !!!
 # ---------------------------------------------------
 """
 def solution(begin, target, words):
@@ -100,7 +95,7 @@ def solution(begin, target, words):
     Q = [begin]
 
     while True:
-        temp_Q = []
+        temp_Q = [] # temp_Q : 다음 탐색할 원소들 저장 / Q : 이번에 탐색할 원소들 !!!
         for word_1 in Q:
             if word_1 == target:
                     return answer

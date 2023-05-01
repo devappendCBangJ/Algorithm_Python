@@ -24,7 +24,7 @@ while queue:
 print(count)
 
 # ---------------------------------------------------
-# 다른 사람 풀이 -> 데카르트 곱 이용
+# 다른 사람 풀이 -> 데카르트 곱 이용 !!
 # ---------------------------------------------------
 """
 # 라이브러리 불러오기
@@ -37,6 +37,7 @@ target = int(input())
 # 데카르트 곱
 def solution(numbers, target):
     l = [(x, -x) for x in numbers]
+    # print(l)
     # print(*l)
     # print(product(*l))
     # print(list(product(*l)))
@@ -48,7 +49,7 @@ print(solution(numbers, target))
 """
 
 # ---------------------------------------------------
-# 다른 사람 풀이 -> Recursion 이용
+# 다른 사람 풀이 -> Recursion 이용 !!
 # ---------------------------------------------------
 """
 # 입력 받기
@@ -69,7 +70,7 @@ print(solution(numbers, target))
 """
 
 # ---------------------------------------------------
-# 다른 사람 풀이 -> DFS 이용
+# 다른 사람 풀이 -> DFS 이용 !!
 # ---------------------------------------------------
 """
 # 입력 받기
@@ -84,7 +85,7 @@ def DFS(idx, numbers, target, value):
     if(idx == N and target == value):
         answer += 1
         return
-    if(idx == N):
+    elif(idx == N):
         return
 
     DFS(idx+1, numbers, target, value+numbers[idx])
@@ -97,9 +98,8 @@ def solution(numbers, target):
 # 결과 출력
 print(solution(numbers, target))
 """
-
 # ---------------------------------------------------
-# 다른 사람 풀이 -> list 이용
+# 다른 사람 풀이 -> list 이용 !!
 # ---------------------------------------------------
 """
 # 입력 받기
