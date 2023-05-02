@@ -96,15 +96,15 @@ def solution(tickets):
         path[ticket[0]].append(ticket[1])
     for key in path.keys():
         path[key].sort(reverse=True) # stack에서 pop하면 오른쪽부터 빠져나가기 때문에, Dictionary를 역순으로 정렬!!!
-    print(path)
+    # print(path)
     stack = ["ICN"]
-    while stack:
+    while stack: # !!!
         top = stack[-1] # stack의 가장 위에 있는 원소 복사!!!
         if not path[top]: # Dictionary에서 다음 경로 존재하지 않는 경우 (다음 경로가 존재하지 않는다는 것 = 경로의 마지막에 있는 원소라는 것)!!!
             answer.append(stack.pop()) # stack에서 가장 오른쪽에 있는 원소 빼서 answer list에 넣음!!!
         else: # Dictionary에서 다음 경로 존재하는 경우!!!
             stack.append(path[top].pop()) # Dictionary의 value에서 가장 오른쪽에 있는 원소 빼서 stack에 넣음!!!
-    print(stack)
+    # print(stack)
     answer.reverse() # answer list 순서 뒤집기!!!
     return answer
     
@@ -112,7 +112,7 @@ print(solution(tickets))
 """
 
 # ---------------------------------------------------
-# 다른 사람 풀이 -> DFS!!! defaultdict 사용!!!
+# 다른 사람 풀이 -> DFS!!! defaultdict 사용!!! 한 번 방문한 국가를 다시 방문할 수 있으므로, visited 리스트 만들지 않음!!!
 # ---------------------------------------------------
 """
 tickets = [["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ICN"], ["ATL", "KOR"]]
@@ -122,7 +122,7 @@ from collections import defaultdict
 def dfs(graph, N, key, footprint): # DFS는 여러가지 정보 함께 보관!!! 경로 저장도 가능!!!
     print(footprint)
 
-    if len(footprint) == N + 1: # 경로 완성시 결과 return!!!
+    if len(footprint) == N + 1: # 경로 완성시 결과 return!!! 경로가 완성되지 않으면 return하지 않음!!!
         return footprint
 
     for idx, country in enumerate(graph[key]):
@@ -133,11 +133,11 @@ def dfs(graph, N, key, footprint): # DFS는 여러가지 정보 함께 보관!!!
 
         ret = dfs(graph, N, country, tmp)
 
-        graph[key].insert(idx, country) # DFS 돌고 나면, graph에서 해당 key의 idx번째에 있던 country 복구!!!
-
         if ret: # 경로 완성되었으면 완성된 결과만 return!!!
             print("ret : ", ret)
             return ret
+
+        graph[key].insert(idx, country) # DFS 돌고 나면, graph에서 해당 key의 idx번째에 있던 country 복구!!!
 
 def solution(tickets):
     answer = []
@@ -150,7 +150,6 @@ def solution(tickets):
         graph[ticket[0]].sort()
 
     answer = dfs(graph, N, "ICN", ["ICN"])
-
     return answer
 
 print(solution(tickets))

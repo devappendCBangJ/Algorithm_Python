@@ -37,24 +37,3 @@ def bfs(start_x, start_y):
 # BFS
 bfs(0, 0)
 
-"""
-def dfs(x, y):
-    if x < 0 or x >= M or y < 0 or y >= N:
-        return False
-    elif maze[x][y] == '1':
-        maze[x][y] = '2'
-        dfs(x-1, y)
-        dfs(x+1, y)
-        dfs(x, y-1)
-        dfs(x, y+1)
-
-    return
-    
-5 6
-101010
-111111
-000001
-111111
-111111
-"""
-
