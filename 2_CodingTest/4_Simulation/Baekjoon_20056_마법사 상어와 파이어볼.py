@@ -77,6 +77,7 @@ print(mass_count)
 
 # ---------------------------------------------------
 # 다른 사람 풀이 -> 풀이 방식 같음
+# https://kimjingo.tistory.com/201
 # ---------------------------------------------------
 """
 from collections import defaultdict
