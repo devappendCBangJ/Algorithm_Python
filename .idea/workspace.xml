@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f67dea49-bcb9-41ee-9ae6-746abef7d95d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Backjoon_20056_마법사 상어와 파이어볼.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_14503_로봇 청소기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_14503_로봇 청소기.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_14503_로봇 청소기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_20056_마법사 상어와 파이어볼.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_20056_마법사 상어와 파이어볼.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Baekjoon_17144_미세먼지 안녕!.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Baekjoon_17144_미세먼지 안녕!.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -289,7 +287,7 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/2_CodingTest/4_Simulation/Backjoon_20056_마법사 상어와 파이어볼.py</url>
+          <url>file://$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_20056_마법사 상어와 파이어볼.py</url>
           <line>2</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
