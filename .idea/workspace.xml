@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f67dea49-bcb9-41ee-9ae6-746abef7d95d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Baekjoon_13460_구슬 탈출2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_15685_드래곤 커브.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_14503_로봇 청소기.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_14503_로봇 청소기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_17144_미세먼지 안녕!.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_17144_미세먼지 안녕!.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_20056_마법사 상어와 파이어볼.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_20056_마법사 상어와 파이어볼.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
       <recent name="$PROJECT_DIR$/2_CodingTest/4_Simulation" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Baekjoon_13460_구슬 탈출2_실패">
+  <component name="RunManager" selected="Python.Baekjoon_15685_드래곤 커브">
     <configuration name="BFS" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,6 +108,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Baekjoon_15685_드래곤 커브" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_CodingTest/4_Simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_15685_드래곤 커브.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Baekjoon_20056_마법사 상어와 파이어볼" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,55 +171,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Programmers_고득점kit_체육복" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_CodingTest/3_Greedy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_CodingTest/3_Greedy/Programmers_고득점kit_체육복.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Programmers_고득점kit_여행경로_실패" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_CodingTest/5_DFSBFS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Programmers_고득점kit_여행경로_실패.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Baekjoon_15685_드래곤 커브" />
         <item itemvalue="Python.Baekjoon_13460_구슬 탈출2_실패" />
         <item itemvalue="Python.Baekjoon_20056_마법사 상어와 파이어볼" />
         <item itemvalue="Python.Baekjoon_14503_로봇 청소기" />
         <item itemvalue="Python.Programmers_고득점kit_아이템 줍기_다른 사람 풀이 확인 필요" />
-        <item itemvalue="Python.Programmers_고득점kit_여행경로_실패" />
       </list>
     </recent_temporary>
   </component>
@@ -293,15 +269,20 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Baekjoon_13460_구슬 탈출2.py</url>
+          <url>file://$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Baekjoon_13460_구슬 탈출2_실패.py</url>
           <line>54</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <condition expression="rb == 'r'" language="Python" />
-          <url>file://$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Baekjoon_13460_구슬 탈출2.py</url>
+          <url>file://$PROJECT_DIR$/2_CodingTest/5_DFSBFS/Baekjoon_13460_구슬 탈출2_실패.py</url>
           <line>28</line>
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2_CodingTest/4_Simulation/Baekjoon_15685_드래곤 커브.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
