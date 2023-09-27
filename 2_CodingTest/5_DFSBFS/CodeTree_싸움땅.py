@@ -76,7 +76,7 @@ for _ in range(k):
 
             player_board[nnr][nnc] = lose_player_info
             players[lose_origin_idx] = [nnr, nnc]
-            
+
             # 진 플레이어 총 바꾸기 # 이긴 플레이어는 무기 바꿔놓고 여기는 누락시키면 안되지!!!
             if gun_board[nnr][nnc]:
                 max_gun_power = max(gun_board[nnr][nnc])
@@ -112,3 +112,98 @@ for _ in range(k):
 
 # 스코어 최종 결과
 print(' '.join([str(player_board[r][c][3]) for r, c in players]))
+
+
+# ---------------------------------------------------
+# 다른 사람 풀이 -> 전체적인 흐름은 유사한데, class, 1차원 배열, heap을 사용했다는 점이 다름. 이 사람 코드가 훨씬 깔끔하고, 1차원 배열, heap 써서 시간복잡도도 우수할 듯
+# https://taemham.github.io/posts/CodeTree_BattleGround/#%EC%9D%B4%EB%8F%99-def-moveself
+# ---------------------------------------------------
+"""
+from heapq import heapreplace, heappush, heappop # heap을 활용하면 정렬 효율성이 향상되어, 최대값 최소값 등을 빠르게 찾을 수 있음!!!
+
+N, M, K = map(int, input().split())
+L = N+1
+guns = [[] for _ in range(L*L)]
+board = [0] * (L*N) + [1] * L # 2차원 배열이 아닌, 1차원 배열 풀이도 가능!!!
+
+for x in range(0, L*N, L):
+    board[x+N] = 1
+    line = map(int, input().split())
+    for xy, gun in enumerate(line, x):
+        if gun:
+            guns[xy].append(-gun) # idx 0번에 최대 공격력인 총이 오게 하기 위해서, 기존 양수값에 -를 붙여줌!!!
+
+class Player:
+    order = []
+    delta = (-L, 1, L, -1)
+    guns_heap = guns
+
+    def __init__(self, x, y, d, s):
+        self.coord = (x - 1) * L + (y - 1)
+        self.direc = d
+        self.stat = -s
+        self.gun = 0
+        self.score = 0
+
+        Player.order.append(self)
+
+    def move(self):
+        next_coord = self.coord + Player.delta[self.direc]
+        self.direc = (self.direc + 2) % 4 if board[next_coord] == 1 else self.direc
+        self.coord = self.coord + Player.delta[self.direc]
+
+    def compare(self):
+        if not Player.guns_heap[self.coord]:
+            return
+        elif not self.gun:
+            self.gun = heappop(Player.guns_heap[self.coord]) # heappop 사용법!!!
+        elif self.gun > Player.guns_heap[self.coord][0]:
+            self.gun = heapreplace(Player.guns_heap[self.coord], self.gun) # heapreplace 사용법!!!
+
+    def fight(self, another_player):
+        winner, loser = sorted([self, another_player], key=lambda x: (x.stat + x.gun, x.stat)) # 정렬하는 꿀팁!!!
+        score = winner.stat + winner.gun - loser.stat - loser.gun
+        loser.lose()
+        winner.win(score)
+        return (loser, winner)
+
+    def lose(self):
+        if self.gun:
+            heappush(Player.guns_heap[self.coord], self.gun) # heappush 사용법!!!
+        self.gun = 0
+
+        for d in range(4):
+            next_direc = (self.direc + d) % 4
+            next_coord = self.coord + Player.delta[next_direc]
+            if board[next_coord]:
+                continue
+
+            self.direc = next_direc
+            self.coord = next_coord
+            self.compare()
+            return
+
+    def win(self, score):
+        self.score += score
+        self.compare()
+
+for _ in range(M):
+    x, y, d, s = map(int, input().split())
+    Player(x, y, d, s)
+
+for player in Player.order:
+    board[player.coord] = player
+
+for turn in range(K):
+    for player in Player.order:
+        board[player.coord] = 0
+        player.move()
+
+        if board[player.coord]:
+            loser, winner = player.fight(board[player.coord])
+            board[loser.coord] = loser
+            board[winner.coord] = winner
+        else:
+            player.compare()
+            board[player.coord] = player
+"""
